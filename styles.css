@@ -131,3 +131,25 @@ footer p{margin:6px 0;font-size:15px}
 }
 .close-btn{position:absolute;top:14px;right:18px;width:46px;height:46px;border:0;background:none;font-size:40px;line-height:1;color:var(--brown);cursor:pointer}
 .close-btn:hover{color:var(--sal)}
+
+/* Colaboraciones */
+.notice{background:var(--light);border-left:5px solid var(--sal);border-radius:10px;padding:16px 20px;margin:0 0 40px;font-size:16px}
+.collabs{display:grid;gap:40px}
+.collab{display:grid;grid-template-columns:.9fr 1.1fr;gap:0;background:var(--paper);border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(43,33,24,.1)}
+.collab.rev .cvisual{order:2}
+.cvisual{min-height:340px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px;color:#fff}
+.cvisual.luces{background:linear-gradient(135deg,#f4a6a0 0%,#f6d58a 35%,#9cd3e0 70%,#b79be0 100%)}
+.cvisual.stage{background:linear-gradient(135deg,#8a2f3a,#d1626b 55%,#f0b4a8)}
+.cvisual.vogue{background:linear-gradient(135deg,#2b2118,#7a4a2b 60%,#d9a47e)}
+.cx{font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:14px;opacity:.9}
+.cname{font-family:var(--serif);font-weight:700;font-size:clamp(40px,6vw,64px);line-height:1.05;text-shadow:0 2px 14px rgba(0,0,0,.25)}
+.cbody{padding:34px 36px}
+.cbody h2{font-size:clamp(26px,3.4vw,34px);margin:4px 0 10px}
+.looks{padding-left:20px;margin:10px 0 18px}
+.cprods{border-top:1px solid #f0e6dc}
+.cprod{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid #f0e6dc}
+.cinfo{display:flex;flex-direction:column;gap:6px}
+.cpname{font-weight:700}
+.cinfo .swatches{margin:0}
+.price.small{font-size:20px;margin:0;white-space:nowrap}
+@media (max-width:820px){.collab{grid-template-columns:1fr}.collab.rev .cvisual{order:0}.cvisual{min-height:220px}.cbody{padding:26px 22px}}

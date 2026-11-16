@@ -58,3 +58,42 @@ const VIDEOS = [
   { id: '0zfQHuDKwZs', nombre: 'Paris Jackson',     titulo: 'Su rutina diaria de maquillaje y skincare',        texto: 'Cuidado de la piel y protección solar mientras se prepara.' },
   { id: '1hbMk_70xm0', nombre: 'Xiao Wen Ju',       titulo: 'Rutina nocturna de 9 pasos',                       texto: 'Una rutina completa de noche para una piel luminosa.' }
 ];
+
+/* Colaboraciones (ficticias, proyecto académico). Para añadir una, copia un bloque. */
+const COLABORACIONES = [
+  {
+    artista: 'Coldplay',
+    coleccion: 'Edición Luces',
+    estilo: 'luces',
+    texto: 'Una colección inspirada en los colores y el brillo de un gran concierto: iluminadores, sombras con destellos y un skincare para que la piel luzca radiante.',
+    looks: ['Glow multicolor para el día', 'Ojos con destellos para la noche'],
+    productos: [
+      { nombre: 'Iluminador Luces',        precio: 18.90, tonos: ['#F6E3C8', '#F4C9D4', '#C9DDF4'] },
+      { nombre: 'Paleta Colores (9 tonos)', precio: 26.90, tonos: ['#F4A6A0', '#F6D58A', '#9CD3E0', '#B79BE0', '#8ED1B0'] },
+      { nombre: 'Sérum Glow edición limitada', precio: 27.90 }
+    ]
+  },
+  {
+    artista: 'KATSEYE',
+    coleccion: 'Edición Stage Ready',
+    estilo: 'stage',
+    texto: 'Maquillaje de escenario fácil de llevar: labios con color y brillo, pestañas definidas y un skincare para cuidar la piel después de cada actuación.',
+    looks: ['Look de escenario con labios intensos', 'Rutina post-actuación en 3 pasos'],
+    productos: [
+      { nombre: 'Labial Stage Ready',      precio: 12.90, tonos: ['#C2605B', '#D1626B', '#8A2F3A'] },
+      { nombre: 'Gloss Spotlight',         precio: 10.50, tonos: ['#F0B4A8', '#E39386'] },
+      { nombre: 'Kit post-actuación (limpiador + mascarilla)', precio: 24.90 }
+    ]
+  },
+  {
+    artista: 'Vogue',
+    coleccion: 'Beauty Secrets en Glow Match',
+    estilo: 'vogue',
+    texto: 'Colaboración de contenido: llevamos a nuestra web las rutinas de belleza de famosos y modelos para que aprendas a copiarlas con nuestros productos.',
+    looks: ['Rutinas de skincare paso a paso', 'Productos Glow Match recomendados para cada rutina'],
+    productos: [
+      { nombre: 'Pack rutina de mañana', precio: 39.90 },
+      { nombre: 'Pack rutina de noche',  precio: 49.90 }
+    ]
+  }
+];

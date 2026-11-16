@@ -161,6 +161,40 @@ function pintarVideos() {
   if (grid) VIDEOS.forEach(v => grid.append(tarjetaVideo(v)));
 }
 
+/* ---------- Colaboraciones ---------- */
+function tarjetaColab(c, i) {
+  const card = crear('article', 'collab' + (i % 2 ? ' rev' : ''));
+  const vis = crear('div', 'cvisual ' + c.estilo);
+  vis.append(crear('span', 'cx', 'Glow Match x'), crear('span', 'cname', c.artista));
+
+  const body = crear('div', 'cbody');
+  body.append(crear('span', 'tag', 'Edición limitada'), crear('h2', null, c.coleccion), crear('p', null, c.texto));
+  const ul = crear('ul', 'looks');
+  c.looks.forEach(l => ul.append(crear('li', null, l)));
+  body.append(ul);
+
+  const lista = crear('div', 'cprods');
+  c.productos.forEach(p => {
+    const fila = crear('div', 'cprod');
+    const izq = crear('div', 'cinfo');
+    izq.append(crear('span', 'cpname', p.nombre));
+    if (p.tonos) {
+      const dots = crear('span', 'swatches');
+      p.tonos.forEach((col, k) => { const d = crear('span', 'dot'); d.style.background = col; d.title = 'Tono ' + (k + 1); dots.append(d); });
+      izq.append(dots);
+    }
+    fila.append(izq, crear('span', 'price small', euro.format(p.precio)));
+    lista.append(fila);
+  });
+  body.append(lista);
+  card.append(vis, body);
+  return card;
+}
+function pintarColaboraciones() {
+  const grid = $('#collabGrid');
+  if (grid) COLABORACIONES.forEach((c, i) => grid.append(tarjetaColab(c, i)));
+}
+
 /* ---------- Animación al hacer scroll ---------- */
 function iniciarReveal() {
   const items = $$('.reveal');
@@ -182,5 +216,6 @@ document.addEventListener('DOMContentLoaded', () => {
   iniciarRecomendador();
   iniciarForma();
   pintarVideos();
+  pintarColaboraciones();
   iniciarReveal();
 });
