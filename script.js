@@ -167,6 +167,15 @@ function tarjetaColab(c, i) {
   const vis = crear('div', 'cvisual ' + c.estilo);
   vis.append(crear('span', 'cx', 'Glow Match x'), crear('span', 'cname', c.artista));
 
+  if (c.artista === 'KATSEYE') {
+    const img = document.createElement('img');
+    img.src = 'img/katseye-collab.png';
+    img.alt = 'KATSEYE x Glow Match';
+    img.loading = 'lazy';
+    img.className = 'c-art';
+    vis.append(img);
+  }
+
   const body = crear('div', 'cbody');
   body.append(crear('span', 'tag', 'Edición limitada'), crear('h2', null, c.coleccion), crear('p', null, c.texto));
   const ul = crear('ul', 'looks');
