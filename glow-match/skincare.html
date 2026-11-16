@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skincare · Glow Match</title>
+  <meta name="description" content="Productos de skincare de Glow Match con precios: limpieza, hidratación, tratamiento y protección.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="skincare">
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Glow Match</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Menú principal">
+    <p class="drawer-title">Glow Match</p>
+    <button class="close-btn" id="closeBtn" type="button" aria-label="Cerrar menú">&times;</button>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="skincare.html" class="active" aria-current="page">Skincare</a></li>
+      <li><a href="maquillaje.html">Maquillaje</a></li>
+      <li><a href="tutoriales.html">Tutoriales</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+    <p class="drawer-foot">El equilibrio perfecto entre cuidar y brillar</p>
+  </aside>
+  <main>
+
+    <section class="pagehead skin">
+      <div class="wrap">
+        <span class="eyebrow">Cuidar</span>
+        <h1>Skincare</h1>
+        <p class="lead">Cada producto tiene un propósito: ayudarte a descubrir lo que mejor funciona contigo.</p>
+      </div>
+    </section>
+
+    <section class="alt" id="recomendador">
+      <div class="wrap narrow">
+        <h2>¿Qué necesita tu piel?</h2><hr class="rule">
+        <p class="sub">Elige tu tipo de piel y marcaremos en la tienda los productos que mejor te van.</p>
+        <div class="picker" id="picker" role="group" aria-label="Tipo de piel">
+          <button type="button" data-skin="oily">Grasa</button>
+          <button type="button" data-skin="dry">Seca</button>
+          <button type="button" data-skin="sensitive">Sensible</button>
+          <button type="button" data-skin="combination">Mixta</button>
+        </div>
+        <div class="result" id="result" aria-live="polite">Selecciona un tipo de piel para ver la recomendación.</div>
+      </div>
+    </section>
+
+    <section id="tienda">
+      <div class="wrap">
+        <h2>Productos de skincare</h2><hr class="rule">
+        <div class="toolbar">
+          <div class="chips-filter" id="filters" role="group" aria-label="Filtrar por categoría"></div>
+          <label class="sort">Ordenar por
+            <select id="sort"><option value="default">Destacados</option><option value="asc">Precio: de menor a mayor</option><option value="desc">Precio: de mayor a menor</option></select>
+          </label>
+        </div>
+        <div class="products" id="productGrid" data-categoria="skincare"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="logo" href="index.html">Glow Match</a>
+      <p>El equilibrio perfecto entre cuidar y brillar</p>
+      <p>© <span id="year">2026</span> Glow Match · Proyecto académico · Los precios son orientativos</p>
+    </div>
+  </footer>
+  <script src="productos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

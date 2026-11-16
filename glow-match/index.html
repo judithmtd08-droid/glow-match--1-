@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glow Match · El equilibrio perfecto entre cuidar y brillar</title>
+  <meta name="description" content="Glow Match analiza tu piel con un escáner facial y te recomienda skincare y maquillaje personalizados.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="inicio">
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Glow Match</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Menú principal">
+    <p class="drawer-title">Glow Match</p>
+    <button class="close-btn" id="closeBtn" type="button" aria-label="Cerrar menú">&times;</button>
+    <ul>
+      <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
+      <li><a href="skincare.html">Skincare</a></li>
+      <li><a href="maquillaje.html">Maquillaje</a></li>
+      <li><a href="tutoriales.html">Tutoriales</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+    <p class="drawer-foot">El equilibrio perfecto entre cuidar y brillar</p>
+  </aside>
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Bienvenida a Glow Match</span>
+          <h1>Glow Match</h1>
+          <p class="lead">Somos una empresa de belleza digital. Analizamos tu piel y tu rostro para recomendarte el skincare y el maquillaje que de verdad te favorecen.</p>
+          <a class="btn" href="skincare.html">Ver skincare</a>
+          <a class="btn alt" href="maquillaje.html">Ver maquillaje</a>
+        </div>
+        <img src="img/hero.jpg" alt="Mujer sosteniendo un producto de limpieza facial" width="420" height="560">
+      </div>
+    </section>
+
+    <section class="alt reveal" id="quienes">
+      <div class="wrap">
+        <h2>Quiénes somos y qué hacemos</h2><hr class="rule">
+        <p class="sub">En Glow Match creemos que cada piel es única. Por eso combinamos tecnología y belleza para acabar con la compra por prueba y error.</p>
+        <div class="grid">
+          <div class="card"><span class="num">1</span><h3>Analizamos</h3><p>Un escáner óptico estudia tu piel en profundidad: tipo, hidratación y tono, además de la forma de tu rostro.</p></div>
+          <div class="card"><span class="num">2</span><h3>Recomendamos</h3><p>Te proponemos los productos de skincare adecuados para tu piel y el maquillaje que más se acerca a tu tono y más te favorece.</p></div>
+          <div class="card"><span class="num">3</span><h3>Te enseñamos</h3><p>En la web ves la forma de maquillarte que más te favorece, con un tutorial incluido.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal" id="explorar">
+      <div class="wrap">
+        <h2>Nuestras colecciones</h2><hr class="rule">
+        <div class="duo">
+          <a class="big skin" href="skincare.html"><span class="eyebrow">Cuidar</span><h3>Skincare</h3><p>Limpieza, hidratación, tratamiento y protección para cada tipo de piel.</p><span class="more">Ver productos →</span></a>
+          <a class="big make" href="maquillaje.html"><span class="eyebrow">Brillar</span><h3>Maquillaje</h3><p>Rostro, ojos y labios en los tonos que mejor te sientan.</p><span class="more">Ver productos →</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt reveal" id="tecnologia">
+      <div class="wrap split">
+        <img src="img/mascarilla.jpg" alt="Mujer con mascarilla facial" width="420" height="525" loading="lazy">
+        <div>
+          <h2>Tecnologías que utilizamos</h2><hr class="rule">
+          <p>Glow Match es una empresa digital basada en tecnologías habilitadoras digitales (THD).</p>
+          <ul class="tech">
+            <li><strong>Inteligencia Artificial.</strong> Analiza el escaneo y recomienda productos a cada persona.</li>
+            <li><strong>Big Data.</strong> Cruza miles de resultados con compras y valoraciones para mejorar las recomendaciones.</li>
+            <li><strong>Internet de las Cosas.</strong> El escáner de las tiendas capta los datos de la piel y los envía a la nube.</li>
+            <li><strong>Cloud.</strong> Aloja la web, la base de datos y la IA, y permite crecer sin servidores propios.</li>
+            <li><strong>Realidad Aumentada.</strong> Probador virtual de maquillaje antes de comprar.</li>
+          </ul>
+          <p class="mt">Y lo hacemos de forma sostenible: menos productos desechados, envases reutilizables y packaging reciclable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal" id="marcas">
+      <div class="wrap">
+        <h2>Marcas con las que trabajamos</h2><hr class="rule">
+        <p class="sub">Colaboramos con marcas de cosmética para ofrecerte la mejor selección.</p>
+        <div class="brands" id="brands"></div>
+      </div>
+    </section>
+
+    <section class="alt reveal" id="tutoriales-home">
+      <div class="wrap">
+        <h2>Aprende con las mejores</h2><hr class="rule">
+        <p class="sub">Descubre las rutinas de skincare de famosos y modelos en los vídeos de Vogue.</p>
+        <a class="btn" href="tutoriales.html">Ver tutoriales</a>
+      </div>
+    </section>
+
+    <section class="reveal" id="contacto">
+      <div class="wrap">
+        <h2>Contacto</h2><hr class="rule">
+        <p>Proyecto de Judith Muñoz y Sara García para el módulo de Digitalización aplicada a los sectores productivos.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="logo" href="index.html">Glow Match</a>
+      <p>El equilibrio perfecto entre cuidar y brillar</p>
+      <p>© <span id="year">2026</span> Glow Match · Proyecto académico · Los precios son orientativos</p>
+    </div>
+  </footer>
+  <script src="productos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutoriales · Glow Match</title>
+  <meta name="description" content="Rutinas de skincare de famosos y modelos en Beauty Secrets de Vogue.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="tutoriales">
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Glow Match</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Menú principal">
+    <p class="drawer-title">Glow Match</p>
+    <button class="close-btn" id="closeBtn" type="button" aria-label="Cerrar menú">&times;</button>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="skincare.html">Skincare</a></li>
+      <li><a href="maquillaje.html">Maquillaje</a></li>
+      <li><a href="tutoriales.html" class="active" aria-current="page">Tutoriales</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+    <p class="drawer-foot">El equilibrio perfecto entre cuidar y brillar</p>
+  </aside>
+  <main>
+
+    <section class="pagehead skin">
+      <div class="wrap">
+        <span class="eyebrow">Aprende</span>
+        <h1>Tutoriales</h1>
+        <p class="lead">Inspírate con las rutinas de skincare de famosos y modelos en la serie <em>Beauty Secrets</em> del canal de YouTube de Vogue.</p>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <div class="videos" id="videoGrid"></div>
+        <noscript><p class="note">Activa JavaScript para ver los vídeos.</p></noscript>
+        <p class="note">Los vídeos son propiedad de Vogue y se muestran mediante el reproductor oficial de YouTube. Si alguno no se carga, usa el enlace «Ver en YouTube».</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="logo" href="index.html">Glow Match</a>
+      <p>El equilibrio perfecto entre cuidar y brillar</p>
+      <p>© <span id="year">2026</span> Glow Match · Proyecto académico · Los precios son orientativos</p>
+    </div>
+  </footer>
+  <script src="productos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
