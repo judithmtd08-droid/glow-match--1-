@@ -167,12 +167,12 @@ function tarjetaColab(c, i) {
   const vis = crear('div', 'cvisual ' + c.estilo);
   vis.append(crear('span', 'cx', 'Glow Match x'), crear('span', 'cname', c.artista));
 
-  if (c.artista === 'KATSEYE') {
+  if (c.artista === 'Coldplay' || c.artista === 'KATSEYE' || c.artista === 'Vogue') {
     const img = document.createElement('img');
-    img.src = 'img/katseye-collab.png';
-    img.alt = 'KATSEYE x Glow Match';
+    img.src = c.artista === 'Coldplay' ? 'img/coldplay-collab.png' : c.artista === 'Vogue' ? 'img/vogue-collab.png' : 'img/katseye-collab.png';
+    img.alt = `${c.artista} x Glow Match`;
     img.loading = 'lazy';
-    img.className = 'c-art';
+    img.className = 'c-art' + (c.artista === 'Coldplay' ? ' coldplay-art' : c.artista === 'Vogue' ? ' vogue-art' : '');
     vis.append(img);
   }
 
